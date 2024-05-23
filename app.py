@@ -38,7 +38,7 @@ def is_malicious_url(url):
 @app.route('/')
 def home():
     if 'user' in session:
-        return render_template('home.html')
+        return render_template('index.html')
     else:
         return redirect(url_for('login'))
 
